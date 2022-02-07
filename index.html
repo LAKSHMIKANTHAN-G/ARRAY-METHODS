@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Creepster&family=Fira+Sans:ital,wght@0,100;1,200&family=Fjalla+One&family=Fruktur&family=Irish+Grover&family=Kanit:wght@800&family=Luckiest+Guy&family=Monoton&family=Paytone+One&family=Permanent+Marker&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,300;1,400;1,900&family=Zen+Antique&family=Zen+Antique+Soft&family=Zen+Kurenaido&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Creepster&family=Fira+Sans:ital,wght@0,100;1,200&family=Fjalla+One&family=Fruktur&family=Irish+Grover&family=Kanit:wght@800&family=Luckiest+Guy&family=Monoton&family=Paytone+One&family=Permanent+Marker&family=Press+Start+2P&family=Qahiri&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,300;1,400;1,900&family=Zen+Antique&family=Zen+Antique+Soft&family=Zen+Kurenaido&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bowlby+One+SC&family=Creepster&family=Fira+Sans:ital,wght@0,100;1,200&family=Fjalla+One&family=Fruktur&family=Irish+Grover&family=Kanit:wght@800&family=Luckiest+Guy&family=Monoton&family=Paytone+One&family=Permanent+Marker&family=Press+Start+2P&family=Qahiri&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,300;1,400;1,900&family=Zen+Antique&family=Zen+Antique+Soft&family=Zen+Kurenaido&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bowlby+One+SC&family=Creepster&family=Fira+Sans:ital,wght@0,100;1,200&family=Fjalla+One&family=Fruktur&family=Irish+Grover&family=Kanit:wght@800&family=Luckiest+Guy&family=Monoton&family=Paytone+One&family=Permanent+Marker&family=Press+Start+2P&family=Qahiri&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,300;1,400;1,900&family=Ultra&family=Zen+Antique&family=Zen+Antique+Soft&family=Zen+Kurenaido&family=Zen+Old+Mincho:wght@400;700&display=swap" rel="stylesheet">
+<title> ARRAY METHODS </title>
+<style>
+body
+{
+background-color:#FFBF00 ;
+}
+h1
+{
+text-align:center;
+border:1px solid #22F3F0;
+background-color:#00FAEE ;
+
+padding:20px;
+}
+*
+{
+font-size:20px;
+
+font-family: 'Audiowide', cursive
+}
+
+textarea
+{
+background-color:#ECF0F1;
+font-family: 'Ultra', serif;
+border:3px solid red;
+font-size:35px;
+}
+</style>
+</head>
+<body>
+<h1> ARRAY-METHODS </h1>
+
+<textarea rows="10" cols="200"id="demo" disabled>
+</textarea>
+
+<button onclick="myFunction1()"> ARRAY LENGTH</button>
+
+<script>
+function myFunction1() {
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.length;
+}
+</script>
+
+
+<button onclick="myFunction2()"> pop() </button>
+<script>
+function myFunction2() {
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+fruits.pop();
+document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+
+
+
+
+
+<button onclick="myFunction3()"> push() </button>
+<script>
+function myFunction3() {
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+fruits.push("Kiwi");
+document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+
+<button onclick="myFunction4()"> push() </button>
+<script>
+function myFunction4() {
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+fruits.shift();
+document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+
+<button onclick="myFunction5()"> push() </button>
+<script>
+function myFunction5() {
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+fruits.unshift("Lemon");
+document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+
+
+<button onclick="myFunction6()"> shift() </button>
+<script>
+function myFunction6() {
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+fruits.shift();
+document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+
+
+<button onclick="myFunction7()"> unshift() </button>
+<script>
+function myFunction7() {
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+fruits.unshift("Lemon");
+document.getElementById("demo").innerHTML = fruits;
+}
+</script>
+<button onclick="myFunction8()"> concatenate() </button>
+<script>
+function myFunction8() {
+const array1 = ["Cecilie", "Lone"];
+const array2 = ["Emil", "Tobias", "Linus"];
+const array3 = ["Robin", "Morgan"];
+
+const myChildren = array1.concat(array2, array3); 
+
+document.getElementById("demo").innerHTML = myChildren;
+}
+</script>
+
+</body>
+</html>
